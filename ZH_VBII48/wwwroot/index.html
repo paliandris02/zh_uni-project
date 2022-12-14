@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Account Manager</title>
+     <link href="style.css" rel="stylesheet" />
+     <script type="module" src="vizsga.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="inputData">
+            <span>Budapest</span>
+            <div id="temp" class="editTitle"></div>
+            <p class="search">Keresés ID alapján</p>
+            <input type="text" name="search" id="search"/>
+            <p class="addTitle">Rendelés hozzáadása</p>
+            <form id="form">
+                <span>Rendelés ID (csak olyan ID-t adj meg ami nem található az adabázisban!)</span>
+                <input id="idInput" type="number" />
+                <span>Teljes név</span>
+                <input id="fullName" type="text" name="fullname" />
+                <span>Email</span>
+                <input id="email" type="email" name="emai" />
+                <span>Ország ISO kód</span>
+                <input id="country" type="text" maxlength="3" name="country" />
+                <span>Cím</span>
+                <input id="address" type="text" name="address" />
+                <span>Dátum</span>
+                <input id="date" type="date" name="date" />
+                <span>Bankkártya típus</span>
+                <input id="creditcard" type="text" name="creditcard" />
+                <span>Összeg</span>
+                <input id="amount" type="number" name="amount" />
+                <input id="submit" type="submit" value="Küldés"/>
+                <footer>VBII48 - SOFTENG - 2022</footer>
+            </form>
+        </div>
+        <div id="orders">
+        </div>
+    </div>
+</body>
+</html>
